@@ -3,6 +3,8 @@ This project aims to visualize the web browsing patterns during 60 days of my li
 
 Public site: https://60days.vercel.app/
 
+![60dayscapture](60-days-web-browsing.png)
+
 ### Development
 The data used has been extracted from the Chrome's user history database (SQLite). 
 
