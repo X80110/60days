@@ -39,7 +39,7 @@
     margin-bottom:20px;
     font-family: "proxima nova", Helvetica, Arial, sans-serif;
     color:#ffffff;
-    font-size:0.7em;
+    font-size:0.7em;x
     text-transform: uppercase;
     text-align : center;
   }
@@ -67,7 +67,7 @@
     <p>get the <a class="srccode" href="https://github.com/x80110/60days"  target="blank">source code</a> | <a href="https://www.linkedin.com/in/xavier-bollo"  target="blank">about me</a> </p>
   </div>
   <script type="module">
-    import { UnrealBloomPass } from '//cdn.skypack.dev/three/examples/jsm/postprocessing/UnrealBloomPass.js';
+      import { UnrealBloomPass } from '//cdn.skypack.dev/three@0.136/examples/jsm/postprocessing/UnrealBloomPass.js';
     
     const Graph = ForceGraph3D()
       (document.getElementById('3d-graph'))
@@ -76,8 +76,8 @@
         .nodeAutoColorBy('group');
 
     const bloomPass = new UnrealBloomPass();
-    bloomPass.strength = 3;
-    bloomPass.radius = 1;
+    bloomPass.strength = 5;
+    bloomPass.radius = 0.01;
     bloomPass.threshold = 0.1;
     Graph.postProcessingComposer().addPass(bloomPass);
   </script>
